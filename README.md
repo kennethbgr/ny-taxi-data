@@ -1,6 +1,10 @@
-# ny-taxi-data
+# New York City Taxi Data Project
 Data engineering project working with New York City taxi data (inspired by DataTalksClub- Data Engineering Course)
 
+
+# Description
+
+This is a simple project which takes data from https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page, transforms it in order to visualize data extracted from this dataset. For simplicity sake, the taxi trip data used for this project only covers from January 1, 2019 to December 31, 2020. 
 
 
 # Setup
