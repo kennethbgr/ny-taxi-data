@@ -11,7 +11,8 @@ This is a simple project which takes data from https://www1.nyc.gov/site/tlc/abo
 # Dashboard
 
 Google Data Studio was used for the visualizations. 
-1. First visualization contains a brief trip analysis data. You can access it [here](https://datastudio.google.com/s/gBXL91OlhGo)
+1. First visualization contains a brief trip analysis data. It can be accessed [here](https://datastudio.google.com/s/gBXL91OlhGo).
+2. Second visualization contains a brief revenue report on the taxi data. It can be accessed [here](https://datastudio.google.com/s/s_HgmTgDn0w).
 
 # Setup
 I will be using Docker to containerize and run Airflow, etc.
