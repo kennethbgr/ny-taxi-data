@@ -26,5 +26,5 @@ Data ingestion is carried out by Airflow DAGs. DAGs then upload the data to Goog
 dbt was used to deine the data warehouse and for creating the transformations needed to create the two visualizations for the dashboard (see above). Multiple views are created in a staging phase and two final tables containing details of all trips (for both green and yellow taxi) and a revenue table are materialized in the deployment phase.
     - ![image](https://user-images.githubusercontent.com/101911504/174879562-7bc14012-5348-4017-932f-73ed7de561dc.png)
 
-
+Note: FHV data is currently stored in GCS but not translated into the data warehouse due to an unexpected error. More work is being done to fix this issue.
 
