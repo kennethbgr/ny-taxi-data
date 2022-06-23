@@ -21,9 +21,9 @@ This project uses Google Cloud Platform, specifically Cloud Storage (as a Data L
 
 Terraform was used to managed the infrastructure of Google Cloud Platform.
 
-Data ingestion is carried out by Airflow DAGs. DAGs then upload the data to Google Cloud Storage (GCS) as a parquet file. Once the data is in GCS, the DAG rearrange the files in more organized folders. At the end of the DAG, an external table is created in BigQuery
+Data ingestion is carried out by Airflow DAGs. DAGs then upload the data to Google Cloud Storage (GCS) as a parquet file. Once the data is in GCS, the DAG rearrange the files in more organized folders. At the end of the DAG, an external table is created in BigQuery.
 
-dbt was used to deine the data warehouse and for creating the transformations needed to create the two visualizations for the dashboard (see above). Multiple views are created in a staging phase and two final tables containing details of all trips (for both green and yellow taxi) and a revenue table are materialized in the deployment phase.
+dbt was used to define the data warehouse and for creating the transformations needed to create the two visualizations for the dashboard (see above). Multiple views are created in a staging phase and two final tables containing details of all trips (for both green and yellow taxi) and a revenue table are materialized in the deployment phase.
     - ![image](https://user-images.githubusercontent.com/101911504/174879562-7bc14012-5348-4017-932f-73ed7de561dc.png)
 
 Note: FHV data is currently stored in GCS but not translated into the data warehouse due to an unexpected error. More work is being done to fix this issue.
