@@ -79,21 +79,6 @@ with DAG(
         },
     )
 
-    # bigquery_external_table_task = BigQueryCreateExternalTableOperator(
-    #     task_id="bigquery_external_table_task",
-    #     table_resource={
-    #         "tableReference": {
-    #             "projectId": PROJECT_ID,
-    #             "datasetId": BIGQUERY_DATASET,
-    #             "tableId": TABLE_NAME_TEMPLATE,
-    #         },
-    #         "externalDataConfiguration": {
-    #             "sourceFormat": "PARQUET",
-    #             "sourceUris": [f"gs://{BUCKET}/raw/{PARQUET_FILE}"],
-    #         },
-    #     },
-    # )
-
     remove_temp_files = BashOperator(
         task_id="remove_temp_files",
         bash_command = f'rm {GREEN_TAXI_OUTPUT_FILE_TEMPLATE}'
